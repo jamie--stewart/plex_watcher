@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "plex_watcher"
+version = "0.1.0"
+description = "A simple utility to send Pushover notifications when new TV Episodes are added to Plex"
+authors = ["Jamie Stewart <jamie.stewart5@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+plexapi = "^3.6.0"
+arrow = "^0.15.6"
+pyyaml = "^5.3.1"
+python-pushover = "^0.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^19.10b0"
+flake8 = "^3.8.1"
+ipython = "^7.14.0"
+ipdb = "^0.13.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
