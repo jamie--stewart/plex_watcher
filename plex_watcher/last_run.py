@@ -6,6 +6,8 @@ LAST_RUN = path.join(CURRENT_DIR, "../lastrun.txt")
 
 
 def get_last_run():
+    if not path.exists(LAST_RUN):
+        return None
     with open(LAST_RUN, "r") as handle:
         raw = handle.read()
     if not raw:
