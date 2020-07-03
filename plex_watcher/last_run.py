@@ -11,7 +11,7 @@ def get_last_run():
     with open(LAST_RUN, "r") as handle:
         raw = handle.read()
     if not raw:
-        return None
+        return arrow.now().shift(days=-1)
     else:
         return arrow.get(raw)
 
